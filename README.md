@@ -10,6 +10,10 @@ Since this is only a proof of concept, not all models have `POST` and `PUT` endp
 
 `Java version: 15.0.1`
 
+The variable `JAVA_HOME` needs to be set to the JDK in use. Such as:
+
+`export JAVA_HOME=/usr/lib/jvm/jdk-15.0.1/`
+
 ## How to use:
 
 `cd` into the folder named `initial` and execute the following command:
