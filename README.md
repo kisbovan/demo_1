@@ -14,7 +14,7 @@ The variable `JAVA_HOME` needs to be set to the JDK in use. Such as:
 
 `export JAVA_HOME=/usr/lib/jvm/jdk-15.0.1/`
 
-There is some initial data loaded:
+There are some initial data loaded:
 - 3 levels: `noob`, `pro` and `invincible`
 - 5 games: `Fortnite`, `Call of Duty Warzone`, `Dota`, `Among Us` and `Fall Guys`
 - 3 genders: `Male`, `Female` and `Other`
