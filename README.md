@@ -39,11 +39,15 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get all levels:
 
+This fetches all levels.
+
 `GET localhost:8080/levels`
 
 <br />
 
 ### Get all games:
+
+This fetches all games.
 
 `GET localhost:8080/games`
 
@@ -52,12 +56,16 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get all genders:
 
+This fetches all genders.
+
 `GET localhost:8080/genders`
 
 <br />
 
 
 ### Get all gamers:
+
+This fetches all gamers.
 
 `GET localhost:8080/gamers`
 
@@ -66,12 +74,16 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get gamer by gamerId:
 
+This fetches a gamer based on gamerId.
+
 `GET localhost:8080/gamer/:gamerId`
 
 <br />
 
 
 ### Get all gamer levels by gamerId:
+
+This fetches all gamer levels based on a gamerId.
 
 `GET localhost:8080/gamer/:gamerId/gamerlevel`
 
@@ -80,12 +92,16 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get all locations:
 
+This fetches all locations.
+
 `GET localhost:8080/geography`
 
 <br />
 
 
 ### Get location by geographyId:
+
+This fetches a location based on geographyId.
 
 `GET localhost:8080/geography/:geographyId`
 
@@ -94,12 +110,16 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get all gamer levels:
 
+This fetches all gamer levels.
+
 `GET localhost:8080/gamerlevels`
 
 <br />
 
 
 ### Get gamer level by gamerLevelId:
+
+This fetches a gamer level based on gamerLevelId.
 
 `GET localhost:8080/gamerlevel/:gamerLevelId`
 
@@ -108,6 +128,8 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Make match based on gamerId and gameId:
 
+Makes match based on gamerId and gameId. 
+
 `GET localhost:8080/gamer/:gamerId/make-match/:gameId`
 
 <br />
@@ -115,11 +137,15 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get gamers with maximum credit for all games based on level:
 
+This fetches gamers with the highest credit for each game based on levelId.
+
 `GET localhost:8080/max-credit/:levelId`
 
 <br />
 
 ### Get gamers with credits summed based on levelId and gameId:
+
+This fetches all gamers with their credits summed who are on the same level and play the same game.
 
 `GET localhost:8080/credits-summed/:levelId/:gameId`
 
@@ -127,11 +153,15 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Get credits based on gamerId, gameId and levelId:
 
+This fetches all the credits for a gamer, specified further by a gameId and levelId. The last element returned in the array is the sum of all credits for the gamer.
+
 `GET localhost:8080/user-credits/:gamerId/:gameId/:levelId`
 
 <br />
 
 ### Create a gamer:
+
+Creates a new gamer.
 
 `POST localhost:8080/gamer`
 
@@ -150,6 +180,8 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Create a gamer level:
 
+Creates a new gamer level.
+
 `POST localhost:8080/gamerlevel`
 
 **Payload:**
@@ -165,6 +197,8 @@ If you can see the console output `Started RestServiceApplication`, you can star
 <br />
 
 ### Give credit to a gamer:
+
+Gives credit to a gamer.
 
 `POST localhost:8080/credit`
 
@@ -182,6 +216,8 @@ If you can see the console output `Started RestServiceApplication`, you can star
 
 ### Create a new location:
 
+Creates a new location.
+
 `POST localhost:8080/geography`
 
 **Payload:**
@@ -194,6 +230,8 @@ If you can see the console output `Started RestServiceApplication`, you can star
 <br />
 
 ### Update a gamer:
+
+Updates a gamer.
 
 `PUT localhost:8080/gamer/:gamerId`
 
